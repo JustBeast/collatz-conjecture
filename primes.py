@@ -6,8 +6,8 @@ def isPrime(n):
 	return True
 
 def average():
+	x=[]
 	for i in range (1,1001):
-		x=[]
 		if isPrime(i) == True:
 			x.append(i)
 	lastprime=0
