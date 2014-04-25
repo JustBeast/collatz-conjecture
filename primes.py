@@ -7,15 +7,14 @@ def isPrime(n):
 
 def average():
 	x=[]
-	for i in range (1,1001):
+	for i in range (1,3001):
 		if isPrime(i) == True:
 			x.append(i)
 	lastprime=0
 	differences=[]
 	for a in x:
-		a - lastprime=l
+		l=a-lastprime
 		differences.append(l)
-		a=lastprime
-	sum(differences)/len(differences)
+		lastprime=a
+	return sum(differences)/len(differences)
 print average()
-		
