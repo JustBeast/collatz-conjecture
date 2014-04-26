@@ -6,14 +6,12 @@ def isPrime(n):
 	return True
 
 def goldbach(x):
-	for x in range(2, x):
-		if isPrime() == True:
-			prime.append(x)
-	for i in prime:
-		evaluate=x-i
-		if isPrime(evaluate) == True:
-			print str(i) + " + " + str(evaluate) + " = " + str(x)
-			return True
+	for i in range(2, x):
+		if isPrime(i) == True:
+			evaluate=x-i
+			if isPrime(evaluate) == True:
+				print str(i) + " + " + str(evaluate) + " = " + str(x)
+				return True
 	return False
 def inathousand():
 	for u in range(4, 1000):
