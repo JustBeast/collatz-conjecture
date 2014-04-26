@@ -15,4 +15,11 @@ def goldbach(x):
 			print i + "and" + evaluate
 			return True
 	return False
+def inathousand():
+	for u in range(1, 1000):
+		if goldbach(u) == False:
+			print u
+			return "Found it"
+			
+	
 		
