@@ -7,7 +7,7 @@ def isPrime(n):
 
 def goldbach(x):
 	for x in range(2, x):
-		if isPrime(x) == True:
+		if isPrime() == True:
 			prime.append(x)
 	for i in prime:
 		evaluate=x-i
