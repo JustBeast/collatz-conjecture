@@ -4,7 +4,7 @@ def isPrime(n):
 		if n%x == 0:
 			return False
 	return True
-prime=[]
+
 def goldbach(x):
 	for x in range(2, x):
 		if isPrime(x) == True:
@@ -12,14 +12,16 @@ def goldbach(x):
 	for i in prime:
 		evaluate=x-i
 		if isPrime(evaluate) == True:
-			print i + "and" + evaluate
+			print str(i) + " + " + str(evaluate) + " = " + str(x)
 			return True
 	return False
 def inathousand():
-	for u in range(1, 1000):
+	for u in range(4, 1000):
 		if goldbach(u) == False:
 			print u
 			return "Found it"
+
 			
+def goldbach_triples(x):
 	
 		
