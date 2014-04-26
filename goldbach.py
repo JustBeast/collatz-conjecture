@@ -9,5 +9,8 @@ def goldbach(x):
 	for x in range(2, x):
 		if isPrime(x) == True:
 			prime.append(x)
-for 
+	for i in prime:
+		evaluate=x-a
+		if isPrime(evaluate) == True:
+			print i + "and" + evaluate
 		
